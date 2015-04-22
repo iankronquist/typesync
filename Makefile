@@ -16,7 +16,7 @@ test: build
 	mocha build/tests
 
 run:
-	node ./build/app.js
+	node ./build/src/app.js
 
 clean:
 	rm -rf build
