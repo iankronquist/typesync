@@ -12,8 +12,8 @@ configure:
 
 test: build
 	mkdir -p ./build/tests
-	$(TSC) tests/test.ts $(TSCFLAGS) --outDir ./build/tests
-	mocha build/tests
+	$(TSC) tests/*.ts $(TSCFLAGS) --outDir ./build/tests
+	mocha build/tests/tests
 
 run:
 	node ./build/src/app.js
