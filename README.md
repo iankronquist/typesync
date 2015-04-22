@@ -8,6 +8,7 @@ Quick Start
 Requires make, npm, and nodejs.
 
 ```
+$ npm install
 $ make configure
 $ make build
 $ make run
