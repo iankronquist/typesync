@@ -9,8 +9,11 @@ describe('GET /', function() {
   it ('should say typescript', function(done) {
     request.get('http://localhost:' + process.env.PORT + '/', function(err,
         res, body) {
+      expect(err == null);
+      console.log(res);
       expect(res.statusCode).to.be(200);
       expect(res.body).to.be('hello typescript');
+      done();
     });
   });
 });
