@@ -1,6 +1,6 @@
 /// <reference path='../typings/tsd.d.ts' />
 import express = require('express');
-import bodyParser = require('body-parser');
+import bodyParser = require('body-parser')
 import knexBuilder = require('knex');
 
 var knex = knexBuilder({
@@ -17,6 +17,11 @@ app.set('knex', knex);
 //var routes = require('./routes')(app);
 
 app.get('/', function (req, res) {
+  res.send('hello typescript');
+});
+
+app.post('/', function (req, res) {
+  console.log(req.body);
   res.send('hello typescript');
 });
 
