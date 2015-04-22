@@ -6,6 +6,13 @@
   "scripts": {
     "test": "mocha test"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iankronquist/typesync.git"
+  }
+  "bugs": {
+    "url": "https://github.com/iankronquist/typesync/issues"
+  },
   "author": "Ian Kronquist",
   "license": "Apache 2",
   "dependencies": {
