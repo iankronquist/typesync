@@ -19,5 +19,7 @@ run:
 	node ./build/app.js
 
 clean:
-	rm -rf typings
 	rm -rf build
+
+clean-all: clean
+	rm -rf typings

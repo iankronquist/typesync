@@ -6,9 +6,17 @@
   "scripts": {
     "test": "mocha test"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iankronquist/typesync.git"
+  },
+  "bugs": {
+    "url": "https://github.com/iankronquist/typesync/issues"
+  },
   "author": "Ian Kronquist",
   "license": "Apache 2",
   "dependencies": {
+    "body-parser": "^1.12.3",
     "expect.js": "^0.3.1",
     "express": "^4.12.3",
     "jshint": "^2.7.0",
