@@ -7,12 +7,13 @@ var request = request_builder.defaults({encoding: null});
 
 describe('GET /', function() {
   it ('should say typescript', function(done) {
-    request.get('http://localhost:' + process.env.PORT + '/', function(err,
+    var port = process.env.PORT || 8000;
+    request.get('http://localhost:' + port + '/', function(err,
         res, body) {
+      var bodyAsString = String.fromCharCode.apply(null, res.body);
       expect(err == null);
-      console.log(res);
       expect(res.statusCode).to.be(200);
-      expect(res.body).to.be('hello typescript');
+      expect(bodyAsString).to.be('hello typescript');
       done();
     });
   });
