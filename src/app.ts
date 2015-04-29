@@ -21,8 +21,13 @@ app.get('/', function (req, res) {
 });
 
 app.post('/', function (req, res) {
-  console.log(req.body);
+  console.log(req.body.test);
   res.send('hello typescript');
+});
+
+app.post('/users/add', function (req, res) {
+  var user = this.knex('users').insert( {username: req.body.username});
+  console.log(user);
 });
 
 
